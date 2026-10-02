@@ -69,3 +69,15 @@ supabase/migrations/   データベースの作り方
 ```
 
 段階やテンプレートを増やしたいときは `src/lib/frameworks.ts` だけ直せばOK。
+
+## ホーム画面に追加して使う(ウェブアプリ)
+
+1.01 と同じく、ホーム画面に追加するとアプリのように全画面で開けます。
+
+1. iPhone の Safari で公開URL(`〜.vercel.app`)を開く
+2. 共有ボタン → **ホーム画面に追加**
+3. ホーム画面のアイコンから開くと、Safari のバーなしで開く
+
+Android の Chrome では、メニューの「ホーム画面に追加」(または「アプリをインストール」)から追加できます。
+
+関連ファイル: `src/app/manifest.ts, public/sw.js, public/icons/, src/components/RegisterSW.tsx`
